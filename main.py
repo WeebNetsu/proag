@@ -45,6 +45,16 @@ def move_player(move_iter: int) -> bool:
 
         if DEBUG:
             print("W")
+    elif move_iter < 90:
+        pya.press("s")
+
+        if DEBUG:
+            print("S")
+    elif move_iter < 120:
+        pya.press("w")
+
+        if DEBUG:
+            print("W")
     else:
         if DEBUG:
             print("RESET")
@@ -123,7 +133,7 @@ def main():
             continue
 
         # if potentially in a fight, fight pokemon
-        if num_iter == 59 and fight_player(4):
+        if num_iter == 119 and fight_player(4):
             break
 
             # if at nurse joy, heal
