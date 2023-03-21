@@ -9,8 +9,11 @@
 
 from time import sleep
 
+import cv2
 import keyboard
 import pyautogui as pya
+from PIL import Image
+from pytesseract import pytesseract
 
 # if true, debugging info will be printed to the terminal
 DEBUG = True
@@ -152,4 +155,9 @@ if __name__ == "__main__":
         print(i)
         sleep(1)
 
-    main()
+    image = pya.screenshot()
+    # img = cv2.resize(image, None, fx=2, fy=2)
+    text: str = pytesseract.image_to_string(image)
+    print("nurse joy" in text.lower())
+    print(text[:-1])
+    # main()
