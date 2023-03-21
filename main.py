@@ -15,7 +15,7 @@ import pyautogui as pya
 # if true, debugging info will be printed to the terminal
 DEBUG = True
 # number of seconds to wait before interacting with something (change if you have slow internet)
-BANDWIDTH_WAIT = 1
+BANDWIDTH_WAIT = 2
 
 
 def check_quit() -> bool:
@@ -75,7 +75,7 @@ def fight_player(rounds: int = 4) -> bool:
     if check_quit():
         return True
 
-    sleep(BANDWIDTH_WAIT + 3)
+    sleep(BANDWIDTH_WAIT + 4)
 
     # attack rounds amount of times
     for _ in range(0, rounds):
@@ -88,7 +88,7 @@ def fight_player(rounds: int = 4) -> bool:
         if check_quit():
             return True
 
-        sleep(BANDWIDTH_WAIT + 3)
+        sleep(BANDWIDTH_WAIT + 4)
 
     if DEBUG:
         print("out fight")
