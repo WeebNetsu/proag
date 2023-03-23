@@ -7,24 +7,24 @@ import pyautogui as pya
 from src.utils.globals import DEBUG
 
 
-def move_forward():
+def move_up():
     """
-    Move player forward
+    Move player up
     """
     pya.press("w")
 
     if DEBUG:
-        print("MOVE FORWARDS")
+        print("MOVE UP")
 
 
-def move_backward():
+def move_down():
     """
-    Move player backwards
+    Move player down
     """
     pya.press("s")
 
     if DEBUG:
-        print("MOVE BACKWARDS")
+        print("MOVE DOWN")
 
 
 def move_left():

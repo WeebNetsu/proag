@@ -1,7 +1,7 @@
 from src.utils import check_quit
 from src.utils.actions import fight_player, heal_player
 from src.utils.globals import DEBUG
-from src.utils.move import move_backward, move_forward
+from src.utils.move import move_down, move_up
 
 
 def move_player(move_iter: int) -> bool:
@@ -11,13 +11,13 @@ def move_player(move_iter: int) -> bool:
     `move_iter` - current loop iteration count of player movement
     """
     if move_iter < 30:
-        move_backward()
+        move_down()
     elif move_iter < 60:
-        move_forward()
+        move_up()
     elif move_iter < 90:
-        move_backward()
+        move_down()
     elif move_iter < 120:
-        move_forward()
+        move_up()
     else:
         if DEBUG:
             print("MOVING RESET\n")
