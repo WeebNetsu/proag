@@ -11,6 +11,7 @@ Get [the game](https://pokemonrevolution.net/home).
   - [Configuring Your Grind](#configuring-your-grind)
 - [Available Regions and Areas](#available-regions-and-areas)
   - [Kanto Region](#kanto-region)
+    - [Route 2 Area](#route-2-area)
     - [Rock Tunnel Area](#rock-tunnel-area)
 - [Contributing](#contributing)
   - [Project Structure](#project-structure)
@@ -44,6 +45,13 @@ Take a look at [Project Structure](#project-structure) if you want to create you
 ## Available Regions and Areas
 
 ### Kanto Region
+
+#### Route 2 Area
+
+- Command: `kanto route_2`
+- Where: In Pewter City, right in front of the Pokecentre
+
+![Route 2 location](assets/guide_locations/kanto/route_2.jpg)
 
 #### Rock Tunnel Area
 
